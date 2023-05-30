@@ -1,0 +1,38 @@
+
+
+    <div class="container">
+      <label for="uname"><b>Username  </b></label>
+      <input type="text" #uname placeholder="Enter Username " name="uname" required><br><br>
+
+      <label for="uname"><b>Full Name   </b></label>
+      <input type="text" #fullname placeholder="Enter Full Name " name="fullname" required><br><br>
+
+      <label for="uname"><b>Email   </b></label>
+      <input type="text" #email placeholder="Enter Email  " name="email" required><br><br>
+  
+      <label for="uname"><b>Mobile Number   </b></label>
+      <input type="text" #mobileno placeholder="Enter Mobile Number " name="mobileno" required><br><br>
+  
+      <label for="psw"><b>Password    </b></label>
+      <input type="password" placeholder="Enter Password  " name="psw" required><br><br>
+
+      <label for="psw"><b>Repeat Password   </b></label>
+      <input type="password" placeholder="Enter Password  " name="psw" required><br><br>
+  
+      <button (click)="getValue(uname.value,fullname.value,email.value,mobileno.value)">Register</button><br><br>
+     
+    </div>
+  
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+
+
+ 
+
+  <h1>Your Register Data is</h1>
+  <p>Username: {{displayusername}}</p>
+  <p>Fullname: {{displayname}}</p>
+  <p>Email: {{displayemail}}</p>
+  <p>Mobile No: {{displaymobileNo}}</p>
